@@ -1,4 +1,5 @@
 import 'es6-promise';
+import axios from 'axios'
 
 function testAsync() {
   return new Promise(resolve => {
@@ -15,6 +16,12 @@ function testAsync() {
   });
 }
 
+function fetchData(path){
+  let url = `http://localhost:3333/`
+  return axios.get(url+path)
+}
+
 export default {
   testAsync,
+  fetchData
 };

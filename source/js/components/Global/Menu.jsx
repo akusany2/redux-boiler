@@ -7,11 +7,8 @@ export default class Menu extends Component {
   render() {
     return (
       <div className='Menu'>
-          <IndexLink to={ routeCodes.DASHBOARD }>
-              Dashboard
-          </IndexLink>
-          <Link to={ routeCodes.ABOUT }>
-              About
+          <Link to={ routeCodes.POST }>
+              Post
           </Link>
           <Link to={routeCodes.CONTACT}>
               Contact
