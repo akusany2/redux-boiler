@@ -17,7 +17,7 @@ function testAsync() {
 }
 
 function fetchData(path){
-  let url = `http://localhost:3333/`
+  let url = `https://jsonplaceholder.typicode.com/`
   return axios.get(url+path)
 }
 
